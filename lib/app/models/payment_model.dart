@@ -2,18 +2,18 @@ class PaymentModel {
   String object;
   String id;
   String status;
-  int value;
-  int discount;
+  double value;
+  double discount;
   String identificationField;
   String dueDate;
   String scheduleDate;
-  Null paymentDate;
-  int fee;
+  String paymentDate = '';
+  double fee;
   String description;
-  Null companyName;
+  String companyName = '';
   String transactionReceiptUrl;
   bool canBeCancelled;
-  Null failReasons;
+  String failReasons = '';
 
   PaymentModel(
       {this.object,
@@ -48,25 +48,5 @@ class PaymentModel {
     transactionReceiptUrl = json['transactionReceiptUrl'];
     canBeCancelled = json['canBeCancelled'];
     failReasons = json['failReasons'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['object'] = this.object;
-    data['id'] = this.id;
-    data['status'] = this.status;
-    data['value'] = this.value;
-    data['discount'] = this.discount;
-    data['identificationField'] = this.identificationField;
-    data['dueDate'] = this.dueDate;
-    data['scheduleDate'] = this.scheduleDate;
-    data['paymentDate'] = this.paymentDate;
-    data['fee'] = this.fee;
-    data['description'] = this.description;
-    data['companyName'] = this.companyName;
-    data['transactionReceiptUrl'] = this.transactionReceiptUrl;
-    data['canBeCancelled'] = this.canBeCancelled;
-    data['failReasons'] = this.failReasons;
-    return data;
   }
 }
