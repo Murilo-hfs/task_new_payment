@@ -18,12 +18,12 @@ class HomeController {
       "discount": 2,
       "identificationField":
           "83640000000-3 74550138008-3 00636394211-8 00048217848-0",
-      "dueDate": "2020-04-20",
-      "scheduleDate": "2020-03-15",
-      "paymentDate": null,
+      "dueDate": "20/04/2020",
+      "scheduleDate": "15/03/2020",
+      "paymentDate": '16/03/2020',
       "fee": 0,
       "description": "Celular 03/12",
-      "companyName": null,
+      "companyName": 'BANCO SAFRA S.A',
       "transactionReceiptUrl": "https://www.asaas.com/comprovantes/00044645",
       "canBeCancelled": false,
       "failReasons": null
